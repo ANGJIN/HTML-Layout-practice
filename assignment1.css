@@ -22,6 +22,7 @@ div{
 .left{
   width: 70%;
   height: 100%;
+  margin-right:-6px;
 }
 .left>div:nth-child(1){
   width: 100%;
@@ -37,6 +38,7 @@ div{
 .lbot > div{
   width: 33%;
   height: 100%;
+  margin-right: -4px;
 }
 .lbot > div:nth-child(1){
   background-color: aquamarine;
