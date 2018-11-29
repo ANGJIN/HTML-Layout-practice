@@ -3,39 +3,37 @@ div{
   box-sizing:border-box;
 }
 .wrap{
-	width: 500px;
+  width: 500px;
     height: 500px;
+    display : flex;
+    flex-direction : column;
 }
 
 .top{
+  flex : 2 1 auto;
   background-color: blueviolet;
-  height:20%;
 }
 .bottom{
-  position:relative;
-  height:80%;
+  flex : 8 1 auto;
+  display:flex;
 }
 .left{
-    position:relative;
-	width:70%;
-    height:100%;
+    flex: 7 1 auto;
+    display : flex;
+    flex-direction : column;
 }
 .left div:nth-child(1){
-  width:100%;
-  height:75%;
+  flex : 3 1 auto;
   background-color: aqua;
 }
 
 .lbot{
-  position:absolute;
-  width:100%;
-  height:25%;
+  flex : 1 1 auto;
   display:flex;
 }
 
 .lbot > div{
-  width:33%;
-  height:25%;
+  flex : 1 1 auto;
 }
 .lbot > div:nth-child(1){
   background-color: aquamarine;
@@ -47,8 +45,16 @@ div{
   background-color: Azure;
 }
 .right{
-    margin-left:70%;
-	width: 30%;
+  flex : 3 1 auto;
+    display : flex;
+    flex-direction : column;
 }
-.right>div:nth-child(1){background-color:Beige}
-.right>div:nth-child(2){background-color:Bisque}
+.right > div{
+  flex : 1 1 auto;
+}
+.right>div:nth-child(1){
+  background-color:Beige
+}
+.right>div:nth-child(2){
+  background-color:Bisque
+}
